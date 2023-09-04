@@ -24,7 +24,7 @@ markdown：https://markdown.com.cn/basic-syntax/
 
 ### [GORM教程](https://www.liwenzhou.com/posts/Go/gorm-crud/)（配套数据库建议使用mysql）
 
-> 当然学校后续课程使用的是SQL server 你们抗战用就行
+> 当然学校后续课程使用的是SQL server 你们看着用就行
 
 ## Web开发相关
 
