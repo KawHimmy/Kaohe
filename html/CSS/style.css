@@ -1,0 +1,11 @@
+body{
+    background-color: aliceblue;
+}
+.box1{
+    background-color:antiquewhite;
+    color: brown;
+}
+.container{
+    width: 80%;
+    margin:auto;
+}

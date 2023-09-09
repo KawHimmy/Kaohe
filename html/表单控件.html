@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>表单控件</title>
+</head>
+<body>
+    <form action="https://search.jd.com/search">
+       <fieldset>
+        <legend>主要信息</legend>
+            <!-- 文本输入框 -->
+            <label for="zhanghu">账户:</label>
+            <input id="zhanghu" type="text" name="account" value="" maxlength="10"><br>
+            <!-- 密码输入框 -->
+            <label for="mima">密码:</label>
+            <input id="mima" type="password" name="pwd" value="" maxlength="10"><br>
+            <!-- 单选输入框 -->
+            性别：<br>
+            <input id="man" type="radio" name="gender" value="male">
+            <label for="man">男</label>
+            <input id="woman" type="radio" name="gender" value="famale">
+            <label for="woman">女</label><br>
+       </fieldset>
+        <fieldset>
+            <legend>附加信息</legend>
+            <!-- 复选输入框 -->
+            爱好：<br>
+            <input type="checkbox" name="hobby" value="smoke">抽烟
+            <input type="checkbox" name="hobby" value="drink">喝酒
+            <input type="checkbox" name="hobby" value="perm">烫头<br>
+            其他:
+            <textarea name="other" cols="20" rows="3"></textarea><br>
+            籍贯:
+            <select name="place">
+                <option value="陕">陕西</option>
+                <option value="晋" selected>山西</option>
+                <option value="赣">江西</option>
+                <option value="黔">广西</option>
+            </select><br>
+        </fieldset>
+        <!-- 隐藏域 -->
+        <input type="hidden" name="tag" value="">
+        <!-- 确认按钮第一种写法 -->
+        <button>确认</button>
+        <!-- 确认按钮第二种写法 -->
+        <!-- <input type="submit" value="确认"> -->
+        <!-- 重置按钮1 -->
+        <button type="reset">重置</button>
+        <!-- 重置按钮2 -->
+        <!-- <input type="reset" value="点我重置"> -->
+        <!-- 普通按钮 -->
+        <input type="button" value="检测是否被注册">
+        <!-- <button type="button">检测是否被注册</button> -->
+    </form>
+</body>
+</html>
