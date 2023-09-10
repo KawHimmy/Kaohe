@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            color:green;
+            font-size:40px;
+        }
+        span{
+            color:aqua;
+            font-size: larger;
+        }
+        #text{
+            color:orchid;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <!-- 超文本链接 -->
+    <a href="第一个HTML文件.html">链接</a>
+    <!-- 有序列表 -->
+    <ol>
+        <li>学院</li>
+        <li>姓名</li>
+        <li>学号</li>
+    </ol>
+    <!-- 无序列表 -->
+    <ul>
+        <li>学院</li>
+        <li>姓名</li>
+        <li>学号</li>
+    </ul>
+    <!-- 表格 -->
+    <table border="1">
+      <tr>
+        <td>单元格1</td>
+        <td>单元格2</td>
+      </tr>
+      <tr>
+        <td>单元格3</td>
+        <td>单元格4</td>
+      </tr>
+    </table>
+    <!-- Form表单 -->
+    <from>
+        用户名：<input type="text">
+        <hr>
+        密码：<input type="password">
+        <hr>
+        <input type="submit" value="登录"> 
+    </from>
+    <!-- css -->
+    <p>css测试1</p>
+    <p style="color:blue; font: size 40px">css内联样式测试</p>
+    <p class="content">css类选择器测试</p>
+    <p>css<span>元素选择器</span>测试</p>
+    <p id="text">ID选择器测试</p>
+
+</body>
+</html>
