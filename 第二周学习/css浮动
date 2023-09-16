@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color:antiquewhite;
+            float:left;
+
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color:aqua;
+            float:left;
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color:brown;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="container"></div>
+        <img src="./1.jpg"  alt="风景图"  titile="风景图">
+        <img src="./1.jpg"  alt="风景图"  titile="风景图">
+    </div>
+</body>
+</html>
