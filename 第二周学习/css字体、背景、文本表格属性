@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test1{
+            color:brown;
+            font-size:bolder;
+            font-style:italic;
+            font-family:"微软黑体";
+    
+        }
+
+        .box1{
+            background-color:aquamarine;
+            width:50px;
+            height:50px;
+        }
+        .box2{
+            background-image:url("1.jpg");
+            width:400px;
+            height:300px;
+            background-repeat:repeat-x;
+            background-size:cover;
+            background-position:center center;
+        }
+
+        .text1{
+            text-align:center;
+            text-decoration:underline;
+            text-transform:uppercase;
+        }
+        .text2{
+            text-indent:30px;
+        }
+
+        table{
+            border-collapse: collapse;
+            width:300px;
+            height:100px;
+        }
+        table,td{
+            border:1px solid black;
+        }
+        td{
+            text-align:center;
+            vertical-align:center;
+            padding:20px;
+            background-color:aquamarine;
+            color:blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 字体属性 -->
+    <p class="test1">字体属性测试</p>
+
+    <!-- 背景属性 -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <!-- 文本属性 -->
+    <p class="text1">秋天autumn</p>
+    <p class="text2">我家楼下有一棵橘子树，天好的时候仔细观察，它的叶子是尖尖的，树是长得高高大大，它呈现橘黄色，春天是呈现緑色，
+        树枝细细长长的，花色纯白地开着，花瓣厚实，冰清玉洁，花里面金黄的花蕊显露出娇贵，虽说香气不如百合那么幽雅，但是花色却十分喜人。
+        闻起来一股清香的味道扑鼻而来。微风吹来，叶子就发出“沙沙”的响，秋天到了，树叶呈现橘黄色，橘子一个个圆圆的像小灯笼 。
+        众多的果实长满枝头，树枝都压的弯弯的，摘一个放在手里，扒开果皮，桔子肉上和桔子皮上粘着的那白丝丝的东西叫做桔络。
+        中药材店专门收购晾干的桔络，中医书上说桔络有通经活血、理气化痰的功能。桔络还能治高血压、久咳引起的胸肋疼痛等。
+        就连吃剩下的橘子皮也可以入药，放冰箱里可以帮助去除异味，全身都是宝。真是一个好东西！
+    </p>
+
+    <!-- 表格属性 -->
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+</body>
+</html>
