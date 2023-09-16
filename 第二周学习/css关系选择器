@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .test1 li{
+            color:blueviolet;
+
+        }
+
+        div>p{
+            color:aquamarine;
+        }
+
+        h3+p{
+            color:blue;
+        }
+
+        h3~p{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- 后代选择器 -->
+    <ul class="test1">
+        <li>1
+            <ol>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ol>
+        </li>
+        <li>2</li>
+    </ul>
+    <!-- 子代选择器 -->
+    <div>
+        <p>大家好</p>
+        <ul>
+            <li>我很好</li>
+            <li>你很好</li>
+        </ul>
+    </div>
+    <!-- 相邻兄弟选择器 -->
+    <p>内容3</p>
+    <h3>标题1</h3>
+    <p>内容1</p>
+    <p>内容2</p>
+    <!-- 通用兄弟选择器 -->
+    <p>内容e</p>
+    <h3>标题2</h3>
+    <p>内容a</p>
+    <p>内容b</p>
+    <div>插入</div>
+    <p>内容c</p>
+    <p>内容d</p>
+</body>
+</html>
