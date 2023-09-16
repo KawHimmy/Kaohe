@@ -1,0 +1,97 @@
+show databases;
+
+use test;
+
+show tables;
+
+use emp;
+
+-- 数据准备，创建新表
+create table family
+(
+    id          int comment '编号',
+    workNumber  varchar(10) comment '工号',
+    name        varchar(10) comment '姓名',
+    gender      char comment '性别',
+    age         tinyint unsigned comment '年龄',
+    idCard      char(18) comment '身份证号',
+    workAddress varchar(50) comment '工作地址',
+    entryDate   date comment '入职时间'
+);
+
+insert into family (id, workNumber, name, gender, age, idCard, workAddress, entryDate)
+values (1, '001', '柳岩', '女', 20, '123456789012345678', '北京', '2000-01-01'),
+       (2, '002', '张无忌', '男', 18, '123454789012345678', '北京', '2005-09-01'),
+       (3, '003', '韦一笑', '男', 38, '823454789012345678', '上海', '2005-08-01'),
+       (4, '004', '赵敏', '女', 18, '123454789512345678', '北京', '2009-12-01'),
+       (5, '005', '小昭', '女', 16, '122454789012345678', '上海', '2007-07-01'),
+       (6, '006', '杨逍', '男', 28, '123458789012345678', '北京', '2006-01-01'),
+       (7, '007', '范瑶', '男', 40, '123454789012145678', '北京', '2005-05-01'),
+       (8, '008', '黛绮丝', '女', 38, '123424789012345678', '天津', '2015-09-01'),
+       (9, '009', '范凉凉', '女', 45, '120454789012345678', '北京', '2010-04-01'),
+       (10, '010', '陈友谅', '男', 53, '123454789012345679', '上海', '2011-01-01'),
+       (11, '011', '张士诚', '男', 55, '183454789012345678', '江苏', '2015-05-01'),
+       (12, '012', '常遇春', '男', 32, '163454789012345678', '北京', '2004-02-01'),
+       (13, '013', '张三丰', '男', 88, '123457789012345678', '江苏', '2020-11-01'),
+       (14, '014', '灭绝', '女', 65, '623454789012345678', '西安', '2019-05-01'),
+       (15, '015', '胡青牛', '男', 70, '023454789012345678', '西安', '2018-04-01'),
+       (16, '016', '周芷若', '女', 18, null, '北京', '2012-06-01');
+
+-- ------------------ >查询需求< -------------------------
+
+-- 基本查询
+-- 1.查询指定字段 name, workNumber, age 返回
+select name, workNumber, age from family;
+-- 2.查询所有字段返回
+select id, workNumber, name, gender, age, idCard, workAddress, entryDate from family;
+select * from family;
+-- 3.查询所有员工的工作地址，起别名
+select workAddress as '工作地址' from family;
+-- 4.查询公司员工的上班地址（不要重复）
+select distinct workAddress as '工作地址' from family;
+
+-- 条件查询
+-- 1.查询年龄在20-40岁之间的人
+select name, age from family where age between 20 and 40;
+-- 2.查询名字为两个字的人
+select * from family where name like '__';
+-- 3.查询年龄在20-40岁之间且名字为两个字的人
+select name, age from family where age between 20 and 40 and name like '__';
+
+-- 聚合函数
+-- 1.统计人数
+select count(*) from family;
+select count(idCard) from family; -- null不参与计算
+-- 2.求年龄平均值
+select avg(age) from family;
+-- 3.求年龄最小值
+select min(age) from family;
+
+-- 分组查询
+-- 1.根据性别分组，查询男女的数量
+select gender, count(*) from family group by gender;
+-- 2.根据性别分组，查询男女的平均年龄
+select gender, avg(age) from family group by gender;
+-- 3.查询年龄小于45的员工，并根据工作地址分组，获取员工数量大于3的地址
+select workAddress, count(*) from family where age < 45 group by workAddress having count(*) >= 3;
+
+-- 排序查询
+-- 1.根据入职时间，对员工进行降序排序
+select * from family order by entryDate desc;
+-- 2.年龄升序，年龄一样根据入职时间降序
+select * from family order by age, entryDate desc;
+
+-- 分页查询
+-- 1. 查询第2页员工数，每页展示10条记录
+select * from family limit 10, 10;
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+insert into employee(id, name, age, gender, nickName) values (1, '刘备', 30, '男', '橙留香');
+select * from employee;
+delete from employee where id = 1;
+insert into employee(id, name, age, gender, nickName) values (1, '刘备', 30, '男', '橙留香');
+insert into employee values (2, '关羽', 43, '男', '关大公'), (3,  '小龙女', 22,  '女', '大美女');
+insert into employee values (4, '周星驰', 65, '男', '星爷');
+update employee set name = '张雨霏', age = 25, nickName = '蝶后' where id = 3;
+delete from employee where id = 2;
