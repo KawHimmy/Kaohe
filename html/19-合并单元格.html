@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 合并单元格步骤，保留最左最上的单元格，添加属性（取值是数字，表示要合并的单元格数量） -->
+    <!-- 跨行合并，保留最上单元格，添加属性 rowspan -->
+    <!-- 跨列合并，保留最上单元格，添加属性 colspan -->
+    <table border="10">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>总分</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>98</td>
+                <td rowspan="2">100</td>
+                <td>198</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>99</td>
+                <!-- <td>100</td> -->
+                <td>199</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td colspan="3">第一二三</td>
+                <!-- <td>第一二三</td>
+                <td>第一二三</td> -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
