@@ -1,0 +1,17 @@
+html语法规范
+<html>开始</html>结束 双标签
+<br />单标签 或者<br>
+标签关系
+包含
+<head>
+    <title></title>
+</head>
+并列
+<html></html>
+<body></body>
+
+html基本结构标签
+<htmI></htmI>HTML标签 页面中最大的标签，我们 称为 根标签
+<head></head>文档的头部 注意在head标签中我们必须要设置的标签是title
+<titile></title>文档的标题 让页面拥有一个属于自己的网页标题
+<body></body>文档的主体 元素包含文档的所有内容，页面内容 基本都是放到body里面的
