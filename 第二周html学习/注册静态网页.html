@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册用户</title>
+</head>
+
+<body>
+    <img src="logo1.jpg" align="center" width="200">
+    <h3>用户注册</h3>
+    <table width="500">
+        <tr>
+            <td>用户名：</td>
+            <td><input type="text" id="text" name="username" value="请输入用户名" maxlength="6">
+            </td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td><input type="radio" name="sex" value="男" id="sex2"><label for="sex2">&nbsp男&nbsp</label><input
+                    type="radio" name="sex" value="女" id="sex1"><label for="sex1">&nbsp女&nbsp</label>
+            </td>
+        </tr>
+        <tr>
+            <td>生日：</td>
+            <td>
+                <select>
+                    <option>--请选择年份--</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                </select>
+                <select>
+                    <option>--请选择月份--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <select>
+                    <option>--请选择日--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>手机号：</td>
+            <td><input type="text" id="mobile" name="mobile" value="请输入手机号" maxlength="11">
+            </td>
+            <td><input type="button" value="获取验证码"></td>
+        </tr>
+        <tr>
+            <td>验证码：</td>
+            <td><input type="text" maxlength="6">
+            </td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" maxlength="20">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" checked="checked">我已阅读并同意<a href="用户协议.txt" target="_blank">用户协议</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="提交">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
