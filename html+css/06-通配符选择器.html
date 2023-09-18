@@ -1,0 +1,21 @@
+<!-- 作用：查找页面所有标签，设置相同样式
+通配符选择器：*，不需要调用，浏览器自动查找页面所有标签，设置相同样式 -->
+<!-- 实际开发中，利用通配符标签清除标签默认样式 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>p标签</p>
+    <div>div标签</div>
+    <h1>hi标签</h1>
+</body>
+</html>
