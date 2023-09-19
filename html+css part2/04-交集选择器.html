@@ -1,0 +1,21 @@
+<!-- 选中同时满足多个条件的元素
+选择器直接连这些，没有任何符号，如果碱基选择器中有标签选择器（如p）选择器之间连写，没有任何符号 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.box{
+            /* 既是p标签，又是有box类 */
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="box">p标签，使用了类选择器box</p>
+    <p>p标签</p>
+    <div class="box">div标签，使用了类选择器box</div>
+</body>
+</html>

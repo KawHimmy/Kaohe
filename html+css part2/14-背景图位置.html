@@ -1,0 +1,42 @@
+<!-- 背景图位置 background-position （bgp）
+属性值 水平方向位置 垂直方向位置
+关键字
+    left
+    right
+    center
+    top
+    bottom
+坐标（数字＋px，正负都可以） -->
+<!-- 可以混用 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 800px;
+            height: 400px;
+            background-color: pink;
+
+            background-image: url(../html/明日香.jpg);
+            background-repeat: no-repeat;
+            /* background-position: center center; */
+            /* background-position: 50px -50px; */
+            /*  水平方向 正数向右移动，负数向左移动
+                垂直方向 正数向下移动，负数向上移动 */
+            /* background-position: 50px center; */
+
+            /* background-position: bottom right; */
+            /* 关键字取值写法，可以颠倒取值顺序 */
+
+            background-position: bottom;
+            /* 可以只写一个关键字，另一个方向默认居中 */
+        }
+    </style>
+</head>
+<body>
+    <div>div标签</div>
+</body>
+</html>

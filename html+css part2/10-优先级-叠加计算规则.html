@@ -1,0 +1,48 @@
+<!-- 叠加计算：如果是符合选择器，则需要权重叠加计算
+公式：（每一级不存在进位）
+（行内样式，id选择器个数，类选择器个数，标签选择器个数）
+规则： 
+    从左向右一次比较选择器个数，同一级个数多的优先级高，如果个数相同，则向后比较
+    ！important权重最高
+    继承权重最低 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c1 .c2 div{
+            color: blue;
+        }
+        div #box3 {
+            color: green;
+        }
+        #box1 .c3{
+            color: orange;
+        }
+
+        div p{
+            color: red;
+        }
+        /* 继承的权重是最低的 */
+        .father{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="c1">
+        <div id="box2" class="c2">
+            <div id="box3" class="c3">
+                这行文本是什么颜色的？
+            </div>
+        </div>
+    </div>
+    <div class="father">
+        <p class="son">
+            这行文本是什么颜色的？
+        </p>
+    </div>
+</body>
+</html>

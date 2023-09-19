@@ -1,0 +1,24 @@
+<!-- 特点：
+相同的属性会覆盖：后面的CSS属性肤感前面的CSS属性
+不同的属性会叠加：不同的CSS属性都生效 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: red;
+            font-size: 30px;
+        }
+        div{
+            color: green;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div>div标签</div>
+</body>
+</html>

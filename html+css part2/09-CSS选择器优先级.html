@@ -1,0 +1,30 @@
+<!-- 优先级：也叫权重，当一个标签使用了多种选择器是，基于不同种类的选择器的匹配规则
+规则：选择器优先级高的样式生效
+公式：通配符选择器＜标签选择器＜类选择器＜id选择器＜行内样式＜！important
+（选中标签的范围越大，优先级越低） -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: green;
+        }
+        *{
+            color: red !important;
+            /* !important 提权功能，使该属性优先级变为最高 慎用 */
+        }
+        .box{
+            color: blue;
+        }
+        #test{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="test" style="color: purple;">div 标签</div>
+</body>
+</html>

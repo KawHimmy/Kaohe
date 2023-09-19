@@ -1,0 +1,34 @@
+<!-- background-size（bgz）
+常用属性值
+    关键字
+        over：等比例缩放背景图片一完全覆盖背景区，可能背景图片部分看不见
+        contain：等比例缩放背景图片一完全装入背景区，可能背景区部分空白
+    百分比
+        根据盒子尺寸计算图片大小
+    数字+单位（例如px） -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 800px;
+            height: 400px;
+            background-color: pink;
+
+            background-image: url(../html/明日香.jpg);
+            background-repeat: no-repeat;
+
+            /* background-size: contain; */
+            /* background-size: cover; */
+            background-size: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>div标签</div>
+</body>
+</html>

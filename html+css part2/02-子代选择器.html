@@ -1,0 +1,25 @@
+<!-- 只选中子代，不选中孙代等
+选择器写法 父选择器>子选择器 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > span{
+            color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <span>span标签</span>
+    <div>
+        <span> span嵌套入div中</span>
+        <p>
+            <span>span嵌套入div中的p</span>
+        </p>
+    </div>
+</body>
+</html>

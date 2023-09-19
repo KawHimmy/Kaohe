@@ -1,0 +1,29 @@
+<!-- 复合选择器
+定义：由两个或者多个基础选择器，通过不同的方式组合而成
+作用：更准确、更高效的选择目标元素（标签） -->
+
+<!-- 后代选择器：选中镁元素的后代元素
+选择器写法：付选择器 子选择器 {CSS属性}，父子选择器之间用空格隔开 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div span{
+            color: red;
+            /* 选中了后代的所有span */
+        }
+    </style>
+</head>
+<body>
+    <span>span标签</span>
+    <div>
+        <span> span嵌套入div中</span>
+        <p>
+            <span>span嵌套入div中的p</span>
+        </p>
+    </div>
+</body>
+</html>

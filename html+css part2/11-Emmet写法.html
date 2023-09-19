@@ -1,0 +1,47 @@
+<!-- Emmet写法：代码的简写方式，输入缩写vscode会自动生成对应代码 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet写法</title>
+    <style>
+        div{
+            width: 500px;
+            /* w500 */
+            height: 500px;
+            /* h500 */
+            background-color: #fff;
+            /* bgc */
+            width: 500px;
+            height: 200px;
+            background-color: #fff;
+            /* w500+h200+bgc */
+        }
+    </style>
+</head>
+<body>
+    <p class="box"></p>
+    <!-- 类选择器（标签名.类名） -->
+    <div class="box"></div>
+    <!-- div比较特殊，直接（.类名）即可 -->
+
+    <p id="box"></p>
+    <!-- id选择器，（标签名#id名） -->
+
+    <div></div>
+    <p></p>
+    <!-- 同级标签 div+p -->
+
+    <div>
+        <p></p>
+    </div>
+    <!-- 父子级标签 div＞p -->
+
+    <span></span><span></span><span></span>
+    <!-- 多个相同标签 span*3 -->
+
+    <div>内容</div>
+    <!-- 有内容的标签 div{内容} -->
+</body>
+</html>
