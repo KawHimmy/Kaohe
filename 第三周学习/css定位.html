@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 相对定位 */
+        .box1{
+            width:200px;
+            height:200px;
+            background-color:aquamarine;
+            position:relative;   
+            left:50px;
+        
+        }
+
+        /* 绝对定位 (元素之间的压盖）*/
+        /* z-index属性 */
+        .box2{
+            width:200px;
+            height:200px;
+            background-color:rgb(189, 127, 255);
+            position:absolute;   
+            left:30px;
+            z-index:10;
+        }
+        .box3{
+            width:200px;
+            height:200px;
+            background-color:rgb(255, 182, 127);
+            position:absolute;   
+            left:10px;
+            top:50px;
+            z-index:5;
+        }
+
+        /* 固定位置 */
+        .box4{
+            width:200px;
+            height:200px;
+            background-color:rgb(189, 127, 255);
+            position:fixed;   
+            right:30px;
+            bottom:30px;
+            
+        }
+
+        h3{
+            height:500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+
+    <h3>hahhhhh</h3>
+    <h3>hahhhhh</h3>
+    <h3>hahhhhh</h3>
+    <h3>hahhhhh</h3>
+    <h3>hahhhhh</h3>
+    <h3>hahhhhh</h3>
+</body>
+</html>

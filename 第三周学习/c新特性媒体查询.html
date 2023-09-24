@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .box{
+            width:200px;
+            height:200px;
+            background-color: rgb(158, 186, 237);
+         }
+
+         @media screen and (max-width:768px){
+            .box{
+                background-color:aquamarine;
+            }
+            .p1{
+                display:none;
+            }
+            .p2{
+                display:none;
+            }
+         }
+         @media screen and (min-width:768px) and (max-width:996px){
+            .box{
+                background-color:rgb(255, 127, 161);
+            }
+            .p1{
+                display:none;
+            }
+            .p2{
+                display:block;
+            }
+         }
+         @media screen and (min-width:996px){
+            .box{
+                background-color:rgb(159, 127, 255);
+            }
+            .p1{
+                display:block;
+            }
+            .p2{
+                display:block;
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p class="p1">hhhhhhh</p>
+    <p class="p2">qqqqqqq</p>
+</body>
+</html>

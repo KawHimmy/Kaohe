@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 法一：overflow,clear */
+        .container{
+            width:300px;
+            
+            background-color:aliceblue;
+            overflow:hidden;
+            clear:both;
+        }
+        .box{
+            width:100px;
+            height:100px;
+            background-color:brown;
+            float:left;
+            margin:5px;
+        }
+        .text{
+            width:100px;
+            height:100px;
+            background-color:black;
+            clear:both;
+            
+        }
+        /* 法二：伪对象方式 */
+        .container2{
+            width:300px;
+            background-color:aliceblue;
+        }
+        .container2::after{
+            content:" ";
+            display:black;
+            clear:both;
+        }
+        .box2{
+            width:100px;
+            height:100px;
+            background-color:brown;
+            float:left;
+            margin:5px;
+        }
+        .text2{
+            width:100px;
+            height:100px;
+            background-color:black;
+            clear:both;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="text"></div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="text2"></div>
+    </div>
+</body>
+</html>

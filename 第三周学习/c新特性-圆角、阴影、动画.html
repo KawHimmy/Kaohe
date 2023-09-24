@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 圆角 */
+        .box{
+            width:400px;
+            height:400px;
+            background-color: rgb(158, 186, 237);
+            /* 居中 */
+            margin:0 auto;
+            /* 圆角 */
+            border-radius:50%;
+            /* 阴影 */
+            box-shadow:0 0 30px rgb(90, 90, 92);
+            animation:breath 1s ease-in-out  infinite alternate;
+        }
+
+        .box:hover{
+            animation-play-state:paused;
+        }
+        /* 动画 */
+        @keyframes breath{
+            0%{
+                opacity:0.2;
+                box-shadow:0 10px 20px rgb(234, 231, 231)
+            }
+            50%{
+                opacity:0.6;
+                box-shadow:0 10px 20px rgb(148, 42, 42)
+            }
+            100%{
+                opacity:1;
+                box-shadow:0 10px 20px rgb(39, 80, 167)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
