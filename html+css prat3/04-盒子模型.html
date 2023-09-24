@@ -1,0 +1,30 @@
+<!-- 布局网页，摆放盒子和内容 -->
+<!-- 盒子模型的重要组成部分：
+        内容区域    width&height 
+        内边距      padding（出现在内容与盒子的边缘之间）
+        外框线      border
+        外边距      margin（出现在盒子外面） -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            padding: 20px;
+            /* 会撑大盒子 */
+            border: 1px solid #000;
+            /* 快捷写法（bd） */
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>div 标签</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- 作用：控制溢出元素的内容的显示方式
+属性名：overflow
+属性值：
+    hidden  溢出隐藏
+    scroll  溢出滚动（无论是否溢出，都显示滚动条位置）
+    atuo    溢出滚动（溢出才显示滚动条位置） -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* overflow: hidden; */
+
+            overflow: scroll;
+
+            /* overflow: auto; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        文字内容测试溢出显示方式文字内容测试溢出显示方式文字内容测试溢出显示方式文字内容测试溢出显示方式文字内容测试溢出显示方式
+    </div>
+</body>
+</html>

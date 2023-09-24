@@ -1,0 +1,30 @@
+<!-- 场景：垂直排列的兄弟元素，上下margin 会合并
+现象：取两个margin 中的较大值生效 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+
+            margin-bottom: 50px;
+        }
+        .two{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+</body>
+</html>

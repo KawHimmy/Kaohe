@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .news{
+            margin: 100px auto;
+            width: 360px;
+            height: 200px;
+            /* background-color: pink; */
+        }
+        .news .hd{
+            /* 要加空格 */
+            height: 34px;
+            background-color: #eee;
+            border: 1px solid #dbdee1;
+            border-left: none;
+        }
+        .news .hd a{
+            display: block; 
+            margin-top: -1px;
+            /* 把盒子向上挪 */
+
+            border-top: 3px solid #ff8400;
+            border-right: 1px solid #dbdee1;
+            width: 48px;
+            height: 34px;
+            background-color: #fff;
+
+            text-align: center;
+            line-height: 32px;
+
+            font-size: 14px;
+            color: #333;
+        }
+        .news .bd{
+            padding: 5px;
+
+        }
+        .news .bd li{
+            padding-left: 15px;
+
+            background-image: url(./square.png);
+            background-repeat: no-repeat;
+            background-position: 0 center;
+        }
+        .news .bd li a{
+            padding-left: 20px;
+
+            background-image: url(./img.gif);
+            background-repeat: no-repeat;
+            background-position: 0 center;
+
+            font-size: 12px;
+            color: #666;
+            line-height: 24px;
+            
+        }
+        .news .bd li a:hover{
+            color: #ff8400;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <div class="hd"><a href="#">新闻</a></div>
+        <div class="bd">
+            <ul>
+                <li><a href="#">点赞“新农人”温暖的伸手</a></li>
+                <li><a href="#">在希望的田野上...</a></li>
+                <li><a href="#">原神，启动！</a></li>
+                <li><a href="#">崩铁，启动！</a></li>
+                <li><a href="#">“中国天眼”又有新发现 已在《自然》杂志发表</a></li>
+                <li><a href="#">不玩原神导致的</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

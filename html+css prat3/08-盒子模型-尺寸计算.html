@@ -1,0 +1,28 @@
+<!-- 默认情况
+    盒子尺寸=内容尺寸+bordeer尺寸+内边距尺寸
+    解决方法
+        手动做减法
+        内减模式：box-sizing：border-box -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+
+                padding: 20px;
+
+                box-sizing: border-box;
+            }
+    </style>
+    
+</head>
+<body>
+    <div>div 标签</div>
+</body>
+</html>

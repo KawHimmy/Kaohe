@@ -1,0 +1,31 @@
+<!-- 常见应用
+正圆形状：给正方形和字设置圆角属性值为 宽高的一般/50%
+胶囊形状（一般用于做按钮）：给长方形盒子设置圆角属性值为盒子高度的一半 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 50%;
+            /* 角度再大，也最多是圆形 */
+        }
+        .two{
+            width: 200px;
+            height: 80px;
+            background-color: orange;
+            border-radius: 40px;
+            /* 角度再大，也是椭圆 */
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

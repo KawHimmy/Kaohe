@@ -1,0 +1,43 @@
+<!-- 作用：创建虚拟元素（微元素），用来摆放装饰性的内容
+        选择器
+        E::before   在E元素里面最前面添加一个伪元素
+        E::after    在E元素里面最后面添加一个伪元素 -->
+<!-- 注意点：
+        必须设置content：“”属性，用来设置微元素的内容，如果没有内容，则引号留空即可
+        伪元素默认是行内显示模式
+        权重和标签选择器相同 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+        }
+        div::after{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            content: "大米";
+
+            display: block;
+        }
+        div::before{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            content: "老鼠";
+
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 标签内容：老鼠爱大米 -->
+    <div>爱</div>
+</body>
+</html>

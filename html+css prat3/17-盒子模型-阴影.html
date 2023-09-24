@@ -1,0 +1,28 @@
+<!-- 作用：给元素设置阴影效果
+        属性名：box-shadow
+        属性值：x轴偏移量 y轴偏移量 模糊半径 扩散半径 颜色 内外阴影 
+        注意：
+            x轴偏移量和y轴偏移量必须书写
+            默认是外阴影，内阴影需要添加inset-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 80px;
+            background-color: orange;
+
+            margin: 50px auto;
+
+            box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.5) inset;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

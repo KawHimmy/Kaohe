@@ -1,0 +1,29 @@
+<!-- 作用：拉开两个盒子之间的距离
+属性名：margin
+提示：与padding属性值写法、含义相同 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 1000px;
+            height: 200px;
+            background-color: pink;
+
+            /* margin: 50px; */
+            /* 外边距不会撑大盒子*/
+
+            /* margin-left: 100px; */
+
+            margin: 0 auto;
+            /* 版心居中 左右居中 必须有宽度，才能版心居中*/
+        }
+    </style>
+</head>
+<body>
+    <div>版心内容</div>
+</body>
+</html>
