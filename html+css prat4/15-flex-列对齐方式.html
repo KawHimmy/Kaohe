@@ -1,0 +1,53 @@
+<!-- 
+    属性名：align-content
+        属性值               
+            flex-start          默认值，弹性盒子从起点开始依次排序
+            flex-end            弹性盒子从终点开始依次排序 
+            center              弹性盒子沿主轴居中排列
+            space-between       弹性盒子沿主轴均匀排列，空白间距均分在弹性盒子之间
+            space-around        弹性盒子沿主轴均匀排列，空白间距均分在弹性盒子两侧
+            space-evenly        弹性盒子沿主轴均匀排列，弹性盒子和容器之间间距相等
+
+            对单行弹性盒子不生效！
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            align-content: space-around;
+            height: 300px;
+            border: 1px solid #000;
+        }
+
+        .box div{
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!-- 
+    属性名
+    align-items：当前弹性容器内所有弹性盒子的侧轴对齐方式（给弹性容器设置）
+    align-self：单独控制某个弹性盒子的侧轴对齐方式（给弹性盒子设置）
+
+        属性值：
+        stretch     弹性盒子沿侧轴先被拉伸至铺满容器（弹性盒子没有设置侧轴方向尺寸则默认拉伸）
+        center      弹性盒子沿侧轴居中排列
+        flex-start  弹性盒子从起点开始依次排列
+        flex-end    弹性盒子从终点开始依次排列
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         .box{
+             display: flex;
+             /* align-items: stretch; */
+             /* align-items: center; */
+             /* align-self: start; */
+             align-items: end;
+
+             height: 300px;
+             border: 1px solid #000;
+         }
+ 
+         /* 控制第二个div，侧轴居中对齐 */
+         .box div:nth-child(2){
+            align-self: center;
+         }
+
+         .box div{
+             width: 200px;
+             height: 100px;
+             background-color: pink;
+         }
+
+         
+     </style>
+ </head>
+ <body>
+     <div class="box">
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+     </div>
+ </body>
+ </html>

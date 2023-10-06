@@ -1,0 +1,44 @@
+<!--    属性名：justify-content
+            属性值               效果
+            flex-start          默认值，弹性盒子从起点开始依次排序
+            flex-end            弹性盒子从终点开始依次排序 
+            center              弹性盒子沿主轴居中排列
+            space-between       弹性盒子沿主轴均匀排列，空白间距均分在弹性盒子之间
+            space-around        弹性盒子沿主轴均匀排列，空白间距均分在弹性盒子两侧
+            space-evenly        弹性盒子沿主轴均匀排列，弹性盒子和容器之间间距相等-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            /* justify-content: end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            justify-content: space-evenly;
+            /* 各个边距都相等 */
+
+            height: 300px;
+            border: 1px solid #000;
+        }
+
+        .box div{
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

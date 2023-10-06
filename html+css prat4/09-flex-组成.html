@@ -1,0 +1,42 @@
+<!--    设置方式：给父元素这是display：flex，子元素可以自动挤压或拉伸 -->
+<!--    组成部分：
+            弹性容器 (沿着主轴排序)
+            弹性盒子
+            主轴：默认在水平方向
+            侧轴/交叉轴：默认在垂直方向 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex ;
+
+            height: 300px;
+            border: 1px solid #000;
+
+        }
+
+        .box div{
+            width: 200px;
+            /* height: 100px; */
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- 
+    属性名：flex-direction、
+
+        属性值          效果
+        row             水平方向，从左到右（默认）
+        column          垂直方向，从上到下
+        row-reverse     水平方向，从右到左
+        column-reverse  垂直方向，从下到上
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            border: 1px solid #000;
+        }
+
+        .box div{
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

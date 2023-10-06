@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            list-style: none;
+        }
+        .product{
+            margin: 50px auto;
+
+            width: 1226px;
+            height: 628px;
+            background-color: pink;
+        }
+
+        .left{
+            float: left;
+
+            width: 234px;
+            height: 628px;
+            background-color: skyblue;
+        }
+        .right{
+            float: right;
+
+            width: 978px;
+            height: 628px;
+            background-color: brown;
+        }
+        .right li{
+            float: left;
+
+            margin-right: 14px;
+            margin-bottom: 14px;
+
+            width: 234px;
+            height: 300px;
+            background-color: orange;
+        }
+        /* 找到第四个和第八个li，取掉右侧margin */
+
+        .right li:nth-child(4n){
+            margin-right: 0;
+        }
+    </style>
+
+    <!-- 细节，如果父级宽度不够，浮动的盒子会掉下来 -->
+</head>
+<body>
+    <!-- 先有版心：左右，右面八个产品 8个li -->
+    <div class="product">
+        <div class="left"></div>
+        <div class="right">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
